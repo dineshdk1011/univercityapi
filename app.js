@@ -3,7 +3,7 @@ const express = require("express")
 const dotenv = require("dotenv").config()
 const cors = require("cors")
 const path = require("path")
-const port = 4001 || process.env.PORT
+const port = process.env.PORT || 5000
 var app = express()
 
 app.set("view engine", "ejs")
