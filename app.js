@@ -1,5 +1,5 @@
 const express = require("express")
-const morgan = require("morgan")
+// const morgan = require("morgan")
 const dotenv = require("dotenv").config()
 const cors = require("cors")
 const path = require("path")
@@ -14,7 +14,7 @@ const mongoDB = require("./database/mongodb")
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use(morgan("dev"))
+// app.use(morgan("dev"))
 
 app.use("/download", express.static(path.join(__dirname + "/download")))
 //cors config
