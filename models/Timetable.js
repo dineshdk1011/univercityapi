@@ -25,6 +25,23 @@ const userSechma = new Sechma({
     userid: {
         type: String,
         default: null
+    },
+
+    department: {
+        type: String,
+        default: null
+    },
+    division: {
+        type: String,
+        default: null
+    },
+    year: {
+        type: String,
+        default: null
+    },
+    semester: {
+        type: String,
+        default: null
     }
 })
 

@@ -38,6 +38,7 @@ app.use("/fees", require("./router/Fees"))
 app.use("/assessment", require("./router/assessment"))
 app.use("/attendance", require("./router/attendance"))
 app.use("/notes", require("./router/notes"))
+app.use("/assessmentresult", require("./router/assessmentresult"))
 
 //server init
 app.listen(port, () => { console.log(`Api Running on http://localhost:${port}`) })
